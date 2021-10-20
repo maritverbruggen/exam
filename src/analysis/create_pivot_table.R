@@ -1,3 +1,6 @@
+library(dplyr)
+library(tidyverse)
+library(reshape2)
 ######################
 # CREATE PIVOT TABLE #
 ######################
