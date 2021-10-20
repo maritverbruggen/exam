@@ -1,5 +1,9 @@
 ## This is the exam repository of Marit Verbruggen
 
+### Research purpose
+This research investigates the effect of covid-19 on the total reviews on airbnb listings in barcelona.
+
+
 ### Repository overview
 This repository contains the folder "src". Here, all the source codes of this research can be found. The repository also contains a makefile, which can be used to run all the source codes in the right order! Also a readme, what you are reading now is added and we have a gitignore file which states which files can be ignored for updates. 
 When the source code is run with make, the following folder will be added: 
