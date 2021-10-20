@@ -3,10 +3,13 @@
 ### PLOT  ####
 ##############
 
+#load pivot table 
+df_pivot <- read.csv("../../gen/analysis/input/df_pivot.csv")
 # convert the `date` column into date format.
 df_pivot$date <- as.Date(df_pivot$date)
 
-pdf("plot.pdf")
+dir.create("../../gen/analysis/output")
+pdf("../../gen/analysis/output/plot.pdf")
 plot(x = df_pivot$date, 
      y = df_pivot$`la Barceloneta`, 
      col = "red", 

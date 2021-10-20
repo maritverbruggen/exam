@@ -12,5 +12,6 @@ download_data <- function(url, filename){
 url_listings <- "http://data.insideairbnb.com/spain/catalonia/barcelona/2021-09-10/visualisations/listings.csv"
 url_reviews <- "http://data.insideairbnb.com/spain/catalonia/barcelona/2021-09-10/visualisations/reviews.csv"
 
-download_data(url_listings, "listings")
-download_data(url_reviews, "reviews")
+dir.create('../../data', recursive = T)
+download_data(url_listings, "../../data/listings")
+download_data(url_reviews, "../../data/reviews")
