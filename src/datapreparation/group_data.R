@@ -7,6 +7,9 @@ library(reshape2)
 ######################
 
 df_merged <- read.csv("../../gen/datapreparation/input/df_merged.csv")
+# convert date column
+df_merged$date <- as.Date(df_merged$date)
+
 # group the number of reviews by month and neighborhood.
 df_grouped <- df_merged %>%
   mutate(month = format(date, "%m"), year = format(date, "%Y")) %>%
